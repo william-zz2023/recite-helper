@@ -95,6 +95,10 @@ h3.sec{font-size:12px;color:var(--muted);font-weight:600;margin:18px 0 6px;lette
 .ctrl-info{font-size:13px;color:var(--muted);flex:1;min-width:0}
 .ctrl-info b{color:var(--text);display:block;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .rate{border:1px solid var(--border);border-radius:9px;padding:7px 10px;font-size:13px;color:var(--text);background:var(--card);outline:none}
+.listen-options{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:12px;font-size:13px;color:var(--muted)}
+.listen-options select{max-width:100%;min-width:0}
+.listen-help{font-size:12px;line-height:1.8;color:var(--muted);margin-top:8px}
+.listen-error{color:var(--danger)}
 /* practice */
 .progress-row{display:flex;align-items:center;gap:16px;margin-bottom:16px;font-size:13px;color:var(--muted)}
 .prog{flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden}
@@ -191,12 +195,46 @@ textarea:focus{border-color:var(--accent);background:#fff}
 .qrow.active .qtag{background:#D4ECDD;color:var(--accent-deep)}
 .qrow .qtxt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
 .qrow .qlen{font-size:11px;color:var(--muted);flex:none}
+/* study history */
+.study-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px 24px;margin-top:20px}
+.study-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.study-head h2{font-size:18px;line-height:1.6}
+.study-head p,.study-note{font-size:12.5px;line-height:1.8;color:var(--muted);margin-top:6px}
+.study-link{border:1px solid var(--border);border-radius:10px;background:var(--card);color:var(--accent-deep);padding:10px 14px;cursor:pointer;font:inherit;font-size:13px}
+.study-link:hover{border-color:var(--accent)}
+.study-link:focus-visible,.calendar-day:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.study-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}
+.study-metric b{font-size:24px;display:block;color:var(--accent-deep)}
+.study-metric span{font-size:12px;color:var(--muted);line-height:1.7}
+.study-tools{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.study-alert{font-size:13px;color:var(--danger);line-height:1.8;margin-top:10px}
+.calendar-nav{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:18px 0 12px}
+.calendar-nav h3{font-size:16px}
+.calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.calendar-week{font-size:12px;text-align:center;color:var(--muted);padding:6px 0}
+.calendar-day{border:1px solid transparent;border-radius:10px;min-height:54px;background:#F7F8F9;color:var(--text);cursor:pointer;font:inherit;font-size:14px;padding:6px 2px}
+.calendar-day small{display:block;font-size:10px;color:var(--muted);margin-top:3px}
+.calendar-day.has-study{background:var(--accent-soft);color:var(--accent-deep)}
+.calendar-day.today{border-color:#B9E5D3}
+.calendar-day.selected{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);font-weight:700}
+.study-item{padding:16px 0;border-bottom:1px solid var(--border)}
+.study-item:last-child{border-bottom:0;padding-bottom:0}
+.study-item h3{font-size:15px;line-height:1.8;overflow-wrap:anywhere}
+.study-item .study-head{align-items:flex-start;flex-wrap:nowrap}
+.study-item .study-link{flex:none}
+.study-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.study-empty{padding:26px 0;text-align:center;font-size:14px;color:var(--muted);line-height:1.9}
 @media(max-width:920px){
   .layout{display:block}
   .sidebar{width:auto;height:auto;position:static;border-right:none;border-bottom:1px solid var(--border)}
   .main{padding:22px 16px 50px}
   .mode-grid,.tips{grid-template-columns:1fr}
   .qcard,.blk{padding:20px}
+  .study-card{padding:18px 16px}
+  .study-metrics{gap:8px}
+  .study-metric b{font-size:21px}
+  .calendar-grid{gap:4px}
+  .calendar-day{min-height:48px}
 }
 </style>
 </head>
@@ -235,6 +273,190 @@ function el(tag,cls,html){const e=document.createElement(tag);if(cls)e.className
 function norm(s){return (s||'').replace(/[^\u4e00-\u9fffA-Za-z0-9]/g,'').toLowerCase();}
 let toastTimer;
 function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),1500);}
+
+/* ---------- study history data ---------- */
+const STUDY_STORAGE_KEY='recite-helper.music-overview.study.v1';
+const STUDY_KINDS={blank:'填空练习',qa:'问答练习',full:'全文默写',read:'阅读确认',listen:'听读完成'};
+let studyStorageError='',studyStorageLocked=false,studyUnreadableOriginal=null;
+function studyDateKey(date=new Date()){
+  return date.getFullYear()+'-'+String(date.getMonth()+1).padStart(2,'0')+'-'+String(date.getDate()).padStart(2,'0');
+}
+function isStudyDate(key){
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(key))return false;
+  const [y,m,d]=key.split('-').map(Number),date=new Date(y,m-1,d,12);
+  return date.getFullYear()===y&&date.getMonth()===m-1&&date.getDate()===d;
+}
+function shiftStudyDate(key,offset){
+  const [y,m,d]=key.split('-').map(Number);return studyDateKey(new Date(y,m-1,d+offset,12));
+}
+function emptyStudyHistory(){return {version:1,days:{}};}
+function validateStudyHistory(value){
+  const object=v=>v&&typeof v==='object'&&!Array.isArray(v);
+  if(!object(value)||value.version!==1||!object(value.days))throw new Error('备份格式不正确');
+  const clean=emptyStudyHistory();
+  for(const [day,entry] of Object.entries(value.days)){
+    if(!isStudyDate(day)||!object(entry)||!object(entry.items))throw new Error('日期记录格式不正确');
+    const items={};
+    for(const [id,item] of Object.entries(entry.items)){
+      if(!/^(0|[1-9]\d*)$/.test(id)||!object(item)||item.id!==Number(id)||typeof item.title!=='string'||typeof item.chapter!=='string'||!object(item.activities))throw new Error('题目记录格式不正确');
+      const activities={};
+      for(const [kind,activity] of Object.entries(item.activities)){
+        if(!Object.hasOwn(STUDY_KINDS,kind)||!object(activity)||!Number.isSafeInteger(activity.count)||activity.count<1||typeof activity.lastAt!=='string'||!Number.isFinite(Date.parse(activity.lastAt)))throw new Error('学习次数格式不正确');
+        const a={count:activity.count,lastAt:activity.lastAt};
+        if(['blank','qa','full'].includes(kind)){
+          if(!Number.isSafeInteger(activity.passed)||activity.passed<0||activity.passed>activity.count||!Number.isInteger(activity.lastScore)||activity.lastScore<0||activity.lastScore>100)throw new Error('练习成绩格式不正确');
+          a.passed=activity.passed;a.lastScore=activity.lastScore;
+        }
+        activities[kind]=a;
+      }
+      if(Object.keys(activities).length)items[id]={id:item.id,title:item.title,chapter:item.chapter,activities};
+    }
+    if(Object.keys(items).length)clean.days[day]={items};
+  }
+  return clean;
+}
+function loadStudyHistory(){
+  let raw=null;
+  try{raw=window.localStorage.getItem(STUDY_STORAGE_KEY);return raw?validateStudyHistory(JSON.parse(raw)):emptyStudyHistory();}
+  catch(error){
+    studyStorageLocked=raw!==null;studyUnreadableOriginal=raw;
+    studyStorageError=raw!==null?'原有记录无法读取，已保留原数据；本次学习暂存在内存中，请先导出备份。':'此浏览器暂时不能保存记录；本次学习仅在当前页面保留，请导出备份。';
+    return emptyStudyHistory();
+  }
+}
+let studyHistory=loadStudyHistory();
+const studyView={selected:studyDateKey(),month:studyDateKey().slice(0,7)};
+function saveStudyHistory(){
+  if(studyStorageLocked)return false;
+  try{window.localStorage.setItem(STUDY_STORAGE_KEY,JSON.stringify(studyHistory));studyStorageError='';return true;}
+  catch(error){studyStorageError='浏览器未能保存最新记录，请先导出备份；关闭页面后未保存的记录会丢失。';return false;}
+}
+function recordStudyActivity(q,kind,{score=0,ok=false}={}){
+  if(!q||!Object.hasOwn(STUDY_KINDS,kind))return;
+  const now=new Date(),day=studyDateKey(now),id=String(q.id);
+  const entry=studyHistory.days[day]||(studyHistory.days[day]={items:{}});
+  const item=entry.items[id]||(entry.items[id]={id:q.id,title:q.src,chapter:q.ch,activities:{}});
+  if(kind==='read'&&item.activities.read)return;
+  const activity=item.activities[kind]||(item.activities[kind]={count:0,lastAt:now.toISOString()});
+  activity.count++;activity.lastAt=now.toISOString();
+  if(['blank','qa','full'].includes(kind)){
+    activity.passed=(activity.passed||0)+(ok?1:0);activity.lastScore=Math.max(0,Math.min(100,Math.round(score*100)));
+  }
+  saveStudyHistory();
+}
+function studyDaySummary(day){
+  const items=Object.values(studyHistory.days[day]?.items||{});
+  const practiced=items.filter(q=>['blank','qa','full'].some(k=>q.activities[k]));
+  const attempts=practiced.flatMap(q=>['blank','qa','full'].map(k=>q.activities[k]).filter(Boolean));
+  return {items,total:items.length,practiced:practiced.length,read:items.filter(q=>q.activities.read).length,listen:items.filter(q=>q.activities.listen).length,
+    attempts:attempts.reduce((n,a)=>n+a.count,0),passed:attempts.reduce((n,a)=>n+a.passed,0)};
+}
+function studyStreak(today=studyDateKey()){
+  let day=studyDaySummary(today).total?today:shiftStudyDate(today,-1),count=0;
+  while(studyDaySummary(day).total){count++;day=shiftStudyDate(day,-1);}
+  return count;
+}
+function mergeStudyHistory(first,second){
+  const merged=validateStudyHistory(first),incoming=validateStudyHistory(second);
+  for(const [date,day] of Object.entries(incoming.days)){
+    const target=merged.days[date]||(merged.days[date]={items:{}});
+    for(const [id,item] of Object.entries(day.items)){
+      if(!target.items[id]){target.items[id]=item;continue;}
+      for(const [kind,activity] of Object.entries(item.activities)){
+        const old=target.items[id].activities[kind];
+        if(!old){target.items[id].activities[kind]=activity;continue;}
+        const latest=Date.parse(activity.lastAt)>Date.parse(old.lastAt)?activity:old;
+        target.items[id].activities[kind]={...latest,count:Math.max(old.count,activity.count)};
+        if(['blank','qa','full'].includes(kind))target.items[id].activities[kind].passed=Math.max(old.passed,activity.passed);
+      }
+    }
+  }
+  return merged;
+}
+function exportStudyHistory(){
+  const backup={...studyHistory,exportedAt:new Date().toISOString()};
+  if(studyUnreadableOriginal!==null)backup.unreadableOriginal=studyUnreadableOriginal;
+  const url=URL.createObjectURL(new Blob([JSON.stringify(backup,null,2)],{type:'application/json'}));
+  const a=document.createElement('a');a.href=url;a.download='背诵打卡-'+studyDateKey()+'.json';
+  document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+async function importStudyHistory(file){
+  if(!file)return;
+  try{
+    const incoming=validateStudyHistory(JSON.parse(await file.text()));
+    studyHistory=mergeStudyHistory(studyHistory,incoming);
+    const saved=saveStudyHistory();if(S.screen==='history')renderStudyHistory();
+    toast(saved?'备份已合并':'记录已合并到当前页面，请导出备份');
+  }catch(error){toast('未导入：'+error.message);}
+}
+/* ---------- study history view ---------- */
+function studyHomeMarkup(){
+  const today=studyDateKey(),summary=studyDaySummary(today);
+  return `<div class="study-head"><div><h2>${summary.total?'今天已打卡':'今日背诵打卡'}</h2><p>${today} · ${summary.total?'已记录今天学过的内容':'完成练习或确认阅读后，自动记录当天学习'}</p></div>
+    <button class="study-link" id="entryHistory">查看打卡记录</button></div>
+    <div class="study-metrics"><div class="study-metric"><b>${summary.practiced}</b><span>练习题目</span></div><div class="study-metric"><b>${summary.read}</b><span>确认已读</span></div><div class="study-metric"><b>${summary.listen}</b><span>完整听读</span></div><div class="study-metric"><b>${studyStreak(today)}</b><span>连续学习天数</span></div></div>
+    <p class="study-note">练习提交后自动记录，同一道题每天去重统计；阅读、听读与背诵练习分开记录。</p>${studyStorageError?`<p class="study-alert" role="status">${escHtml(studyStorageError)}</p>`:''}`;
+}
+function openStudyHistory(){
+  stopListening();S.screen='history';document.onkeydown=null;
+  studyView.selected=studyDateKey();studyView.month=studyView.selected.slice(0,7);renderStudyHistory();
+}
+function moveStudyMonth(offset){
+  const [y,m]=studyView.month.split('-').map(Number),date=new Date(y,m-1+offset,1,12);
+  studyView.month=studyDateKey(date).slice(0,7);
+  const days=Object.keys(studyHistory.days).filter(d=>d.startsWith(studyView.month)).sort();
+  studyView.selected=days.at(-1)||studyView.month+'-01';renderStudyHistory();
+}
+function renderStudyHistory(){
+  S.screen='history';renderSidebar();
+  const today=studyDateKey(),summary=studyDaySummary(studyView.selected),sc=el('div','screen fade');
+  const intro=el('section','study-card');intro.style.marginTop='0';
+  intro.innerHTML=`<div class="study-head"><div><h2>背诵打卡记录</h2><p>累计学习 ${Object.keys(studyHistory.days).length} 天 · 当前连续 ${studyStreak(today)} 天</p></div><button class="study-link" id="studyBack">返回首页</button></div>
+    <p class="study-note">记录仅保存在当前浏览器，不会在不同设备间自动同步；清理网站数据或使用无痕浏览可能丢失记录。可导出备份后，在另一浏览器导入。</p>
+    <div class="study-tools"><button class="study-link" id="studyExport">导出备份</button><button class="study-link" id="studyImport">导入备份</button><input id="studyImportFile" type="file" accept="application/json,.json" hidden></div>
+    <p class="study-note">导入时合并日期与题目；同日同题同模式的次数取较大值，最近成绩取较新记录，重复导入不会累加。</p>${studyStorageError?`<p class="study-alert" role="status">${escHtml(studyStorageError)}</p>`:''}`;
+  sc.appendChild(intro);
+  const calendar=el('section','study-card');
+  const [year,month]=studyView.month.split('-').map(Number),first=new Date(year,month-1,1,12),total=new Date(year,month,0,12).getDate();
+  calendar.innerHTML=`<div class="calendar-nav"><button class="study-link" id="studyPrev" aria-label="上个月">←</button><h3>${year} 年 ${month} 月</h3><button class="study-link" id="studyNext" aria-label="下个月">→</button><button class="study-link" id="studyToday">今天</button></div>`;
+  const grid=el('div','calendar-grid');
+  ['一','二','三','四','五','六','日'].forEach(d=>grid.appendChild(el('div','calendar-week',d)));
+  for(let i=0;i<(first.getDay()+6)%7;i++)grid.appendChild(el('div'));
+  for(let d=1;d<=total;d++){
+    const key=studyView.month+'-'+String(d).padStart(2,'0'),n=studyDaySummary(key).total;
+    const button=el('button','calendar-day'+(n?' has-study':'')+(key===today?' today':'')+(key===studyView.selected?' selected':''),`${d}${n?`<small>${n} 题</small>`:''}`);
+    button.setAttribute('aria-label',`${key}，${n?'学习 '+n+' 题':'暂无记录'}`);button.setAttribute('aria-pressed',String(key===studyView.selected));
+    if(key===today)button.setAttribute('aria-current','date');
+    button.onclick=()=>{studyView.selected=key;renderStudyHistory();};grid.appendChild(button);
+  }
+  calendar.appendChild(grid);calendar.appendChild(el('p','study-note','绿色表示当天有学习记录；题数按当天学过的题目去重，并不代表全部掌握。'));sc.appendChild(calendar);
+  const details=el('section','study-card');
+  details.innerHTML=`<div class="study-head"><h2>${studyView.selected} 的学习内容</h2><span class="tag">${summary.total} 题</span></div>
+    <p class="study-note">练习 ${summary.practiced} 题，提交 ${summary.attempts} 次，通过 ${summary.passed} 次；确认阅读 ${summary.read} 题，完整听读 ${summary.listen} 题。</p>`;
+  const lastTime=item=>Math.max(...Object.values(item.activities).map(a=>Date.parse(a.lastAt)));
+  for(const item of [...summary.items].sort((a,b)=>lastTime(b)-lastTime(a))){
+    const row=el('article','study-item');
+    row.innerHTML=`<div class="study-head"><div><h3>${escHtml(item.title)}</h3><p class="study-note">${escHtml(item.chapter)}</p></div></div>`;
+    const question=DATA.questions.find(q=>q.id===item.id&&q.src===item.title);
+    if(question){
+      const retry=el('button','study-link','再练这题');
+      retry.onclick=()=>{const practiced=Object.keys(item.activities).find(k=>['blank','qa','full'].includes(k));S.mode=practiced||'qa';S.chaps.add(question.ch);startPractice([question]);};
+      row.querySelector('.study-head').appendChild(retry);
+    }
+    const tags=el('div','study-tags');
+    for(const [kind,activity] of Object.entries(item.activities)){
+      const label=STUDY_KINDS[kind]+' · '+activity.count+' 次'+(['blank','qa','full'].includes(kind)?` · 最近 ${activity.lastScore} 分`:'' );
+      tags.appendChild(el('span','tag soft',escHtml(label)));
+    }
+    row.appendChild(tags);details.appendChild(row);
+  }
+  if(!summary.total)details.appendChild(el('p','study-empty',studyView.selected===today?'今天还没有学习记录。<br>提交一道练习，或在阅读页确认“本题已读”，就能开始记录。':'这一天还没有学习记录。'));
+  sc.appendChild(details);$('#main').replaceChildren(sc);
+  $('#studyBack').onclick=exitToHome;$('#studyExport').onclick=exportStudyHistory;
+  $('#studyImport').onclick=()=>$('#studyImportFile').click();
+  $('#studyImportFile').onchange=e=>importStudyHistory(e.target.files[0]);
+  $('#studyPrev').onclick=()=>moveStudyMonth(-1);$('#studyNext').onclick=()=>moveStudyMonth(1);$('#studyToday').onclick=openStudyHistory;
+}
 
 /* ---------- scope / list ---------- */
 function inScope(q){return S.chaps.has(q.ch);}
@@ -407,6 +629,9 @@ function renderSidebar(){
       html+=`</div></div>`;
     });
     html+=`<div class="side-foot"><button class="btn-ghost" id="btnExit">结束练习</button></div>`;
+  }else if(S.screen==='history'){
+    const today=studyDaySummary(studyDateKey());
+    html+=`<h3 class="sec">今天的学习</h3><div style="padding:4px"><div class="pr-big">${today.total}<small> 题</small></div><div class="pr-label">练习 ${today.practiced} · 阅读 ${today.read} · 听读 ${today.listen}</div><div class="pr-stats">累计学习 ${Object.keys(studyHistory.days).length} 天</div></div><div class="side-foot"><button class="btn-ghost" id="btnExit">返回首页</button></div>`;
   }else{
     const pass=S.results.filter(r=>r.ok).length;
     html+=`<h3 class="sec">本轮结果</h3>
@@ -519,13 +744,14 @@ function jumpToQ(qid, qidx){
   }
 }
 function exitToHome(){
-  if(window.speechSynthesis)speechSynthesis.cancel();
+  stopListening();
   S.screen='home';S.list=[];S.batches=[];S.results=[];
   document.onkeydown=null;renderHome();
 }
 
 /* ---------- home ---------- */
 function renderHome(rerenderSidebar=true){
+  if(S.screen==='listen')stopListening();
   S.screen='home';
   if(rerenderSidebar!==false)renderSidebar();
   const m=$('#main');m.innerHTML='';
@@ -549,6 +775,7 @@ function renderHome(rerenderSidebar=true){
   sc.appendChild(el('div','entry-row',`
     <div class="entry" id="entryRead"><div class="ic">📖</div><div><b>阅读模式</b><span>分块浏览原文，先熟悉内容</span></div></div>
     <div class="entry" id="entryListen"><div class="ic">🎧</div><div><b>听读模式</b><span>朗读原文，边听边看跟读</span></div></div>`));
+  sc.appendChild(el('section','study-card',studyHomeMarkup()));
   const n=S.mode?modeAvail(S.mode):0;
   const nb=n?chunk(Array(n).fill(0),10).length:0;
   sc.appendChild(el('div','start-wrap',
@@ -566,6 +793,7 @@ function renderHome(rerenderSidebar=true){
   });
   $('#entryRead').onclick=startRead;
   $('#entryListen').onclick=startListen;
+  $('#entryHistory').onclick=openStudyHistory;
   const go=()=>{if(!S.mode){toast('请先选择一种练习模式');return;}const list=buildPracticeList();if(list.length)startPractice(list);};
   $('#btnStartHero').onclick=go;
   const bs=$('#btnStartSide');
@@ -577,7 +805,7 @@ function renderHome(rerenderSidebar=true){
 
 /* ---------- reading ---------- */
 function readBlocks(){return DATA.questions.filter(inScope);}
-function startRead(){S.screen='read';S.read.i=0;renderRead();}
+function startRead(){if(!readBlocks().length){toast('请先选择需要阅读的章节');return;}S.screen='read';S.read.i=0;renderRead();}
 function renderRead(){
   renderSidebar();
   document.onkeydown=e=>{
@@ -586,6 +814,7 @@ function renderRead(){
     if(e.key==='ArrowLeft')navRead(-1);
   };
   const blocks=readBlocks(),i=Math.min(S.read.i,blocks.length-1);
+  if(!blocks.length){exitToHome();return;}
   const m=$('#main');m.innerHTML='';
   const sc=el('div','screen fade');
   sc.appendChild(el('div','read-head',`<span>阅读模式</span><div class="prog" style="flex:1"><div class="prog-val" style="width:${(i+1)/blocks.length*100}%"></div></div><span>${i+1} / ${blocks.length}</span>`));
@@ -601,6 +830,11 @@ function renderRead(){
   nb.onclick=()=>navRead(1);
   nav.appendChild(nb);
   sc.appendChild(nav);
+  const confirm=el('button','btn-ghost',studyHistory.days[studyDateKey()]?.items[String(b.id)]?.activities.read?'今天已确认阅读':'本题已读，记入今日打卡');
+  confirm.style.marginTop='14px';
+  confirm.onclick=()=>{recordStudyActivity(b,'read');renderRead();toast(studyStorageError?'已记入本页，请导出备份':'已记入今日阅读记录');};
+  sc.appendChild(confirm);
+  sc.appendChild(el('p','study-note','浏览原文不会自动计入打卡；读完后请点击上方按钮确认。重复确认同一题，当天只记录一次。'));
   m.appendChild(sc);
 }
 function navRead(d){
@@ -611,15 +845,83 @@ function navRead(d){
 
 /* ---------- listening ---------- */
 let zhVoice=null;
-function pickVoice(){
-  const vs=speechSynthesis.getVoices();
-  zhVoice=vs.find(v=>/^zh[-_]/i.test(v.lang))||vs.find(v=>/zh/i.test(v.lang))||null;
+// Retain utterances until completion and ignore callbacks from cancelled sessions.
+const listenSpeech={generation:0,utterances:[],startTimer:null,status:'idle',error:'',voiceName:''};
+function supportsSpeech(){return !!window.speechSynthesis&&typeof window.SpeechSynthesisUtterance==='function';}
+function chineseVoices(){
+  if(!supportsSpeech())return [];
+  return speechSynthesis.getVoices().filter(v=>/^(zh|cmn)([-_]|$)/i.test(v.lang));
 }
-if(window.speechSynthesis){speechSynthesis.onvoiceschanged=pickVoice;pickVoice();}
-function startListen(){S.screen='listen';S.listen.i=0;S.listen.playing=false;renderListen();}
+function pickVoice(){
+  const vs=chineseVoices();
+  const rank=v=>(/^zh[-_]CN$/i.test(v.lang)?100:/^cmn/i.test(v.lang)?90:50)+(v.localService?10:0)+(v.default?1:0);
+  zhVoice=vs.find(v=>v.name===listenSpeech.voiceName)||vs.sort((a,b)=>rank(b)-rank(a))[0]||null;
+}
+function refreshListenVoices(){
+  const sel=$('#listenVoice');
+  if(!sel)return;
+  sel.innerHTML='';
+  const auto=document.createElement('option');
+  auto.value='';auto.textContent='自动选择普通话';sel.appendChild(auto);
+  chineseVoices().forEach(v=>{
+    const opt=document.createElement('option');
+    opt.value=v.name;opt.textContent=v.name+' · '+v.lang;sel.appendChild(opt);
+  });
+  if(listenSpeech.voiceName&&![...sel.options].some(o=>o.value===listenSpeech.voiceName))listenSpeech.voiceName='';
+  sel.value=listenSpeech.voiceName;
+}
+if(supportsSpeech()){
+  speechSynthesis.addEventListener('voiceschanged',()=>{pickVoice();refreshListenVoices();});
+  pickVoice();
+}
+function clearSpeechTimer(){clearTimeout(listenSpeech.startTimer);listenSpeech.startTimer=null;}
+function stopListening(){
+  ++listenSpeech.generation;
+  clearSpeechTimer();
+  const hadUtterances=listenSpeech.utterances.length>0;
+  listenSpeech.utterances=[];
+  S.listen.playing=false;listenSpeech.status='idle';listenSpeech.error='';
+  // Avoid cancel() immediately before the first speak() on an idle iOS engine.
+  if(supportsSpeech()&&(hadUtterances||speechSynthesis.speaking||speechSynthesis.pending||speechSynthesis.paused))speechSynthesis.cancel();
+}
+function failListening(message){
+  stopListening();listenSpeech.status='error';listenSpeech.error=message;
+  updateListenControls();
+}
+function updateListenControls(){
+  if(S.screen!=='listen')return;
+  const pb=$('#listenPlay'),info=$('#listenStatus');
+  if(pb){
+    pb.textContent=S.listen.playing?'⏸':'▶';
+    pb.setAttribute('aria-label',S.listen.playing?'停止朗读':'开始朗读');
+    pb.setAttribute('aria-pressed',String(S.listen.playing));
+  }
+  if(info){
+    const messages={idle:'点击 ▶ 开始朗读',starting:'正在启动语音…',playing:'正在朗读，点击卡片可跳转',done:'本轮朗读完成'};
+    info.textContent=!supportsSpeech()?'当前浏览器不支持语音朗读':listenSpeech.error||messages[listenSpeech.status];
+    info.classList.toggle('listen-error',listenSpeech.status==='error');
+  }
+}
+function splitSpeechText(text,maxLength=100){
+  const parts=text.match(/[^。！？；\n]+[。！？；\n]*|[。！？；\n]+/g)||[];
+  const chunks=[];let current='';
+  for(const part of parts){
+    for(const char of Array.from(part)){
+      if(Array.from(current).length>=maxLength){chunks.push(current);current='';}
+      current+=char;
+    }
+    if(current){chunks.push(current);current='';}
+  }
+  return chunks.filter(t=>t.trim());
+}
+function startListen(){
+  if(!readBlocks().length){toast('请先选择需要听读的章节');return;}
+  stopListening();S.screen='listen';S.listen.i=0;renderListen();
+}
 function renderListen(){
   renderSidebar();
   const blocks=readBlocks(),i=Math.min(S.listen.i,blocks.length-1);
+  if(!blocks.length){exitToHome();return;}
   S.listen.i=i;
   const m=$('#main');m.innerHTML='';
   const sc=el('div','screen fade');
@@ -636,45 +938,109 @@ function renderListen(){
     listWrap.appendChild(node);
   });
   sc.appendChild(listWrap);
-  const hasTTS=!!window.speechSynthesis;
   const bar=el('div','ctrl-bar');
   bar.appendChild(el('button','ctrl-btn small','⏮')).onclick=()=>{S.listen.i=Math.max(0,S.listen.i-1);renderListen();if(S.listen.playing)speakCur();};
   const pb=el('button','ctrl-btn',S.listen.playing?'⏸':'▶');
+  pb.id='listenPlay';pb.disabled=!supportsSpeech();
   pb.onclick=()=>{
-    if(!hasTTS){toast('当前浏览器不支持语音朗读');return;}
-    if(S.listen.playing){speechSynthesis.cancel();S.listen.playing=false;renderListen();}
-    else{S.listen.playing=true;renderListen();speakCur();}
+    if(S.listen.playing){stopListening();updateListenControls();}
+    // Start synchronously in the tap handler; do not await voices or rebuild the page first.
+    else speakCur();
   };
   bar.appendChild(pb);
   bar.appendChild(el('button','ctrl-btn small','⏭')).onclick=()=>{S.listen.i=Math.min(blocks.length-1,S.listen.i+1);renderListen();if(S.listen.playing)speakCur();};
-  bar.appendChild(el('div','ctrl-info',`<b>${escHtml(blocks[i].src)}</b>${hasTTS?(S.listen.playing?'正在朗读，点击卡片可跳转':'点击 ▶ 开始朗读'):'当前浏览器不支持语音朗读，建议用 Chrome / Edge'}`));
+  bar.appendChild(el('div','ctrl-info',`<b>${escHtml(blocks[i].src)}</b><span id="listenStatus" role="status" aria-live="polite"></span>`));
   const sel=document.createElement('select');
   sel.className='rate';
+  sel.setAttribute('aria-label','朗读速度');
   sel.innerHTML='<option value="0.75">0.75×</option><option value="1" selected>1.0×</option><option value="1.25">1.25×</option>';
   sel.value=String(S.listen.rate);
   sel.onchange=()=>{S.listen.rate=+sel.value;if(S.listen.playing)speakCur();};
   bar.appendChild(sel);
   sc.appendChild(bar);
+  const options=el('div','listen-options');
+  const label=el('label','','朗读声音');label.htmlFor='listenVoice';options.appendChild(label);
+  const voiceSelect=document.createElement('select');voiceSelect.id='listenVoice';voiceSelect.className='rate';
+  voiceSelect.onchange=()=>{listenSpeech.voiceName=voiceSelect.value;pickVoice();if(S.listen.playing)speakCur();};
+  options.appendChild(voiceSelect);sc.insertBefore(options,listWrap);
+  const help=el('p','listen-help','iPhone 无声时，请检查媒体音量、静音模式和蓝牙输出；也可以切换上方中文声音后再次点击播放。停止后再播放会从本题开头开始。');
+  help.style.marginBottom='12px';sc.insertBefore(help,listWrap);
   m.appendChild(sc);
+  refreshListenVoices();updateListenControls();
   const cur=$('#blk-'+i);
   if(cur)cur.scrollIntoView({block:'center',behavior:'smooth'});
 }
 function speakCur(){
-  if(!window.speechSynthesis)return;
-  speechSynthesis.cancel();
-  const blocks=readBlocks(),i=S.listen.i;
-  if(i>=blocks.length){S.listen.playing=false;renderListen();return;}
-  const b=blocks[i];
-  const u=new SpeechSynthesisUtterance(b.src+'。'+b.ans);
-  u.lang='zh-CN';u.rate=S.listen.rate;
-  if(zhVoice)u.voice=zhVoice;
-  u.onend=()=>{
-    if(!S.listen.playing||S.screen!=='listen')return;
-    if(S.listen.i<readBlocks().length-1){S.listen.i++;renderListen();speakCur();}
-    else{S.listen.playing=false;renderListen();}
-  };
-  speechSynthesis.speak(u);
+  stopListening();
+  if(!supportsSpeech()){failListening('当前浏览器不支持语音朗读');return;}
+  if(!readBlocks()[S.listen.i])return;
+  pickVoice();
+  S.listen.playing=true;listenSpeech.error='';
+  // Some engines remain paused after cancellation; resume while the tap is active.
+  if(speechSynthesis.paused)speechSynthesis.resume();
+  queueSpeechBlock(listenSpeech.generation);
 }
+function queueSpeechBlock(generation){
+  if(generation!==listenSpeech.generation||!S.listen.playing||S.screen!=='listen')return;
+  const blocks=readBlocks(),i=S.listen.i;
+  const b=blocks[i];
+  if(!b){stopListening();updateListenControls();return;}
+  const texts=splitSpeechText(b.src+'。'+b.ans);
+  listenSpeech.status='starting';updateListenControls();
+  const isCurrent=()=>generation===listenSpeech.generation&&S.listen.playing&&S.screen==='listen';
+  const errors={
+    'not-allowed':'Safari 未允许朗读，请再次点击播放。',
+    'language-unavailable':'当前设备没有可用的中文语音，请检查系统中文语音或切换朗读声音。',
+    'voice-unavailable':'所选声音不可用，请切换为自动选择普通话后重试。',
+    'audio-busy':'声音输出正被占用，请关闭其他音频后重试。',
+    'audio-hardware':'无法使用声音输出，请检查媒体音量和蓝牙设备。',
+    'network':'语音服务连接失败，请切换其他中文声音或检查网络。'
+  };
+  listenSpeech.utterances=texts.map((text,index)=>{
+    const u=new SpeechSynthesisUtterance(text);
+    let started=false;
+    u.lang=zhVoice?zhVoice.lang:'zh-CN';u.rate=S.listen.rate;u.volume=1;
+    if(zhVoice)u.voice=zhVoice;
+    u.onstart=()=>{
+      if(!isCurrent())return;
+      started=true;
+      clearSpeechTimer();listenSpeech.status='playing';updateListenControls();
+    };
+    u.onerror=event=>{
+      if(!isCurrent())return;
+      failListening(errors[event.error]||'语音播放失败（'+(event.error||'unknown')+'），请切换声音后重试。');
+    };
+    u.onend=()=>{
+      if(!isCurrent())return;
+      if(!started){failListening('系统语音未能开始播放，请切换中文声音，并检查媒体音量和静音模式后重试。');return;}
+      if(index!==texts.length-1)return;
+      clearSpeechTimer();listenSpeech.utterances=[];
+      recordStudyActivity(b,'listen');
+      if(S.listen.i<readBlocks().length-1){
+        S.listen.i++;renderListen();
+        // Natural completion needs no cancel(), which can discard the next utterance on WebKit.
+        queueSpeechBlock(generation);
+      }else{
+        S.listen.playing=false;listenSpeech.status='done';updateListenControls();
+      }
+    };
+    return u;
+  });
+  clearSpeechTimer();
+  listenSpeech.startTimer=setTimeout(()=>{
+    if(isCurrent())failListening('语音未能启动，请检查音量、静音模式，切换中文声音后再次点击播放。');
+  },12000);
+  try{
+    // Queue all short segments during the user's tap rather than starting each from a timer.
+    for(const u of listenSpeech.utterances){
+      if(!isCurrent())break;
+      speechSynthesis.speak(u);
+    }
+  }catch(error){
+    if(isCurrent())failListening('语音启动失败，请切换声音后再次点击播放。');
+  }
+}
+window.addEventListener('pagehide',stopListening);
 
 /* ---------- practice ---------- */
 function startPractice(list){
@@ -685,6 +1051,7 @@ function startPractice(list){
 }
 function record(q,score,ok){
   S.results.push({q,score,ok});
+  recordStudyActivity(q,S.mode,{score,ok});
   const cur=$('#curStat');
   if(cur)cur.textContent=`已通过 ${S.results.filter(r=>r.ok).length}`;
   renderSidebar();
