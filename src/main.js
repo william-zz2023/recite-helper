@@ -5,6 +5,9 @@ import { loadQuestions } from './services/materials.js';
 import { renderHome } from './features/home.js';
 import { renderSidebar } from './features/sidebar.js';
 import { startRead, renderRead, selectReadQuestion } from './features/reading.js';
+import { startReadingReview, renderReadingReview } from './features/reading-review.js';
+import { studyStore, readingReviewStore } from './app/store.js';
+import { syncReadingReviewHistory } from './services/reading-review-history.js';
 import { startListen, renderListen, stopListening, selectListenQuestion } from './features/listening.js';
 import { startPractice, renderQ, renderResult } from './features/practice.js';
 import { openStudyHistory, renderStudyHistory } from './features/history.js';
@@ -14,6 +17,7 @@ registerScreens({
   home: { render: renderHome },
   sidebar: { render: renderSidebar },
   read: { start: startRead, render: renderRead, select: selectReadQuestion },
+  'reading-review': { start: startReadingReview, render: renderReadingReview },
   listen: { start: startListen, render: renderListen, select: selectListenQuestion, stop: stopListening },
   practice: { start: startPractice, render: renderQ },
   history: { start: openStudyHistory, render: renderStudyHistory },
@@ -24,8 +28,12 @@ registerScreens({
 async function start() {
   try {
     initializeMaterial(await loadQuestions(MATERIAL.questionsUrl));
+    syncReadingReviewHistory(readingReviewStore, studyStore, DATA.questions);
+    readingReviewStore.reconcile(DATA.questions);
     document.querySelector('#matInfo').textContent = `${MATERIAL.title} · ${DATA.questions.length} 题 · ${ALL_CHAPS.length} 章`;
     if(window.location.hash==='#politics')startScreen('politics');
+    else if(window.location.hash==='#music-review'&&readingReviewStore.data.round)renderScreen('reading-review');
+    else if(['#music-reading','#music-review'].includes(window.location.hash))startScreen('read',{restore:true});
     else renderScreen('home');
   } catch (error) {
     console.error(error);

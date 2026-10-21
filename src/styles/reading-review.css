@@ -1,0 +1,97 @@
+/* Music read → recall extends the existing green/white study interface. */
+.reading-workspace,.reading-review-screen{font-size:16px;line-height:1.65;text-wrap:pretty;overflow-wrap:anywhere}
+.rr-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}
+.rr-heading h1,.rr-card h1{font-size:22px;line-height:1.5;font-weight:700}
+.rr-eyebrow{font-size:12px;font-weight:600;color:var(--accent-deep);margin-bottom:6px;line-height:1.6}
+.reading-workspace .blk-title{font-size:20px;line-height:1.65}
+.reading-workspace .blk-ans,.rr-answer>div{white-space:pre-wrap;font-size:16px;line-height:1.85}
+.reading-workspace .rr-add{margin-top:20px}
+.rr-queue{position:sticky;bottom:0;z-index:5;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;margin-top:24px;box-shadow:0 -2px 12px rgba(16,24,40,.05)}
+.rr-queue-top{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.rr-queue h2{font-size:16px;line-height:1.6}
+.rr-queue-top .btn-primary{width:auto;min-width:150px;flex:none}
+.rr-queue .study-note{margin-top:4px}
+.rr-mode{display:flex;align-items:center;gap:12px;margin-top:12px;font-size:13px;color:var(--muted)}
+.rr-mode select{min-width:0;max-width:100%;flex:1;border:1px solid var(--border);border-radius:9px;background:var(--card);color:var(--text);font:inherit;padding:8px 10px;min-height:44px}
+.rr-pending{font-size:13px;margin-top:12px}
+.rr-pending summary,.rr-side-details summary,.rr-reading-directory>summary{cursor:pointer;min-height:44px;display:list-item;align-content:center;color:var(--accent-deep);font-weight:500}
+.rr-pending ol{max-height:150px;overflow:auto;margin:4px 0 8px;padding-left:24px;line-height:1.8}
+.rr-pending li{padding:4px 0}
+.rr-pending li>div{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.rr-pending li>div>span{min-width:0}
+.rr-pending .study-link,.rr-pending .tag{flex:none}
+.rr-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px 30px}
+.rr-card h2{font-size:21px;line-height:1.65;margin-bottom:18px}
+.rr-instruction{font-size:14px;color:var(--muted);margin:16px 0}
+.rr-card>.btn-primary{margin-top:18px}
+.rr-actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 10px}
+.rr-actions .btn-primary,.rr-actions .btn-ghost{flex:1;min-width:180px;width:auto}
+.rr-answer{border-top:1px solid var(--border);padding-top:20px;margin-top:20px}
+.rr-answer h3{font-size:13px;color:var(--muted);font-weight:500;margin-bottom:10px}
+.rr-hints{margin:16px 0}
+.rr-hints .kw-chips{gap:8px;margin-top:8px;margin-bottom:0}
+.rr-hints .kchip{font-size:13px;padding:5px 11px;border-radius:8px}
+.rr-ratings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:18px}
+.rr-feedback{font-size:16px;font-weight:600;color:var(--accent-deep);margin:20px 0 12px}
+.rr-card textarea{font-size:16px;min-height:190px;display:block;margin-top:8px}
+.rr-stats{display:flex;gap:16px;margin:24px 0 16px}
+.rr-stats>div{flex:1;padding:16px 12px;background:var(--accent-soft);border-radius:12px}
+.rr-stats b{display:block;font-size:26px;color:var(--accent-deep);line-height:1.3;font-variant-numeric:tabular-nums}
+.rr-stats span{font-size:13px;color:var(--accent-deep)}
+.rr-results{list-style:none;margin-top:20px}
+.rr-results li{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;border-top:1px solid var(--border);padding:14px 0;font-size:14px}
+.rr-results b{flex:none;font-size:12px;font-weight:500;color:var(--accent-deep);max-width:40%;text-align:right}
+.rr-side{width:100%;font-size:14px}
+.rr-side h2{font-size:16px}
+.rr-side-count{font-size:28px;font-weight:700;margin:20px 0 8px;line-height:1.2}
+.rr-side-count small{font-size:13px;font-weight:400;color:var(--muted)}
+.rr-side-details{margin:20px 0}
+.rr-side-list{list-style:none;counter-reset:review;margin:6px 0 16px}
+.rr-side-list li{counter-increment:review;padding:12px 10px;border-top:1px solid var(--border)}
+.rr-side-list li::before{content:counter(review) ". ";color:var(--muted)}
+.rr-side-list small{display:block;color:var(--muted);margin-top:3px}
+.rr-side-list .current{background:var(--accent-soft);border-radius:8px;color:var(--accent-deep)}
+.rr-reading-directory>summary{display:none}
+.rr-home-resume{margin-top:14px;color:var(--accent-deep)}
+.reading-workspace button,.reading-review-screen button,.rr-side button{min-height:44px;font-family:inherit}
+.reading-workspace button:disabled,.reading-review-screen button:disabled,.rr-mode select:disabled{opacity:.55;cursor:default}
+.reading-workspace :focus-visible,.reading-review-screen :focus-visible,.rr-side :focus-visible,.rr-reading-directory :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.reading-workspace .study-link,.reading-review-screen .study-link{min-height:44px;white-space:normal}
+@media(min-width:921px){
+  .rr-reading-directory:not([open])>summary{display:list-item}
+  .rr-side-details>summary{display:none}
+  .rr-side-details:not([open])>summary{display:list-item}
+}
+@media(max-width:920px){
+  body[data-screen="read"] .sidebar,body[data-screen="reading-review"] .sidebar{padding:8px 16px}
+  .rr-reading-directory>summary{display:list-item;font-size:14px}
+  .rr-reading-directory>div{max-height:45vh;overflow:auto;padding-top:8px}
+  .rr-heading{gap:10px;margin-bottom:16px;align-items:flex-start}
+  .rr-heading h1,.rr-card h1{font-size:19px}
+  .rr-heading .study-link{flex:none;font-size:12px;padding:0}
+  .reading-workspace .blk{padding:20px 18px}
+  .reading-workspace .blk-title,.rr-card h2{font-size:18px;line-height:1.65}
+  .reading-workspace .nav-row{gap:8px}
+  .reading-workspace .nav-row .btn-ghost{padding:10px 12px;font-size:13px}
+  .rr-queue{padding:14px 14px calc(14px + env(safe-area-inset-bottom));margin-top:20px;bottom:0}
+  .rr-queue-top{gap:10px;align-items:flex-start}
+  .rr-queue-top .btn-primary{min-width:116px;font-size:14px;padding:12px 10px}
+  .rr-queue .study-note{font-size:12px;line-height:1.6}
+  .rr-mode{gap:10px;margin-top:10px}
+  .rr-mode select{font-size:16px}
+  .rr-card{padding:22px 18px}
+  .rr-actions{gap:10px;margin-top:18px}
+  .rr-actions .btn-primary,.rr-actions .btn-ghost{min-width:100%;font-size:14px}
+  .rr-ratings{gap:8px}
+  .rr-ratings button{font-size:14px;padding:12px 6px}
+  .rr-stats{gap:8px;margin:20px 0 12px}
+  .rr-stats>div{padding:12px 10px}
+  .rr-stats b{font-size:24px}
+  .rr-side>h2,.rr-side>.study-note,.rr-side>.rr-side-count,.rr-side>.prog,.rr-side>.btn-ghost{display:none}
+  .rr-side-details{margin:0}
+  .rr-side-list{max-height:35vh;overflow:auto}
+  .rr-results li{gap:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  .reading-workspace.fade,.reading-review-screen.fade{animation:none}
+}

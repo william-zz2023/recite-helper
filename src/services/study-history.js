@@ -1,5 +1,5 @@
 export const STUDY_STORAGE_KEY='recite-helper.music-overview.study.v1';
-export const STUDY_KINDS={blank:'填空练习',qa:'问答练习',full:'全文默写',read:'阅读确认',listen:'听读完成'};
+export const STUDY_KINDS={blank:'填空练习',qa:'问答练习',full:'全文默写',recall:'背诵自评',read:'阅读确认',listen:'听读完成'};
 
 // Storage and clock are injected so persistence can be tested without a browser.
 export function createStudyStore({ key = STUDY_STORAGE_KEY, storage = () => globalThis.localStorage, now = () => new Date() } = {}) {
@@ -33,6 +33,14 @@ export function createStudyStore({ key = STUDY_STORAGE_KEY, storage = () => glob
             if(!Number.isSafeInteger(activity.passed)||activity.passed<0||activity.passed>activity.count||!Number.isInteger(activity.lastScore)||activity.lastScore<0||activity.lastScore>100)throw new Error('练习成绩格式不正确');
             a.passed=activity.passed;a.lastScore=activity.lastScore;
           }
+          if(kind==='recall'){
+            if(!['remembered','unsure','forgot'].includes(activity.lastRating)||typeof activity.lastAssisted!=='boolean')throw new Error('背诵自评格式不正确');
+            a.lastRating=activity.lastRating;a.lastAssisted=activity.lastAssisted;
+          }
+          if(activity.eventIds!==undefined){
+            if(!Array.isArray(activity.eventIds)||!activity.eventIds.every(id=>typeof id==='string'&&/^[a-zA-Z0-9-]{1,170}$/.test(id)))throw new Error('复习记录编号不正确');
+            a.eventIds=[...new Set(activity.eventIds)];
+          }
           activities[kind]=a;
         }
         if(Object.keys(activities).length)items[id]={id:item.id,title:item.title,chapter:item.chapter,activities};
@@ -56,24 +64,31 @@ export function createStudyStore({ key = STUDY_STORAGE_KEY, storage = () => glob
     try{storage().setItem(key,JSON.stringify(studyHistory));studyStorageError='';return true;}
     catch(error){studyStorageError='浏览器未能保存最新记录，请先导出备份；关闭页面后未保存的记录会丢失。';return false;}
   }
-  function recordStudyActivity(q,kind,{score=0,ok=false}={}){
+  function recordStudyActivity(q,kind,{score=0,ok=false,rating,assisted=false,eventId,at}={}){
     if(!q||!Object.hasOwn(STUDY_KINDS,kind))return;
-    const instant=now(),day=studyDateKey(instant),id=String(q.id);
+    if(kind==='recall'&&!['remembered','unsure','forgot'].includes(rating))throw new Error('背诵自评不正确');
+    if(eventId!==undefined&&(typeof eventId!=='string'||!/^[a-zA-Z0-9-]{1,170}$/.test(eventId)))throw new Error('复习记录编号不正确');
+    const instant=at===undefined?now():new Date(at);
+    if(!Number.isFinite(instant.getTime()))throw new Error('学习时间不正确');
+    const day=studyDateKey(instant),id=String(q.id);
     const entry=studyHistory.days[day]||(studyHistory.days[day]={items:{}});
     const item=entry.items[id]||(entry.items[id]={id:q.id,title:q.src,chapter:q.ch,activities:{}});
-    if(kind==='read'&&item.activities.read)return;
+    if((kind==='read'&&item.activities.read)||item.activities[kind]?.eventIds?.includes(eventId))return {saved:saveStudyHistory(),recorded:false};
     const activity=item.activities[kind]||(item.activities[kind]={count:0,lastAt:instant.toISOString()});
-    activity.count++;activity.lastAt=instant.toISOString();
+    const latest=Date.parse(instant.toISOString())>=Date.parse(activity.lastAt);
+    activity.count++;if(latest)activity.lastAt=instant.toISOString();
     if(['blank','qa','full'].includes(kind)){
-      activity.passed=(activity.passed||0)+(ok?1:0);activity.lastScore=Math.max(0,Math.min(100,Math.round(score*100)));
+      activity.passed=(activity.passed||0)+(ok?1:0);if(latest)activity.lastScore=Math.max(0,Math.min(100,Math.round(score*100)));
     }
-    saveStudyHistory();
+    if(kind==='recall'&&latest){activity.lastRating=rating;activity.lastAssisted=Boolean(assisted);}
+    if(eventId)activity.eventIds=[...(activity.eventIds||[]),eventId];
+    return {saved:saveStudyHistory(),recorded:true};
   }
   function studyDaySummary(day){
     const items=Object.values(studyHistory.days[day]?.items||{});
     const practiced=items.filter(q=>['blank','qa','full'].some(k=>q.activities[k]));
     const attempts=practiced.flatMap(q=>['blank','qa','full'].map(k=>q.activities[k]).filter(Boolean));
-    return {items,total:items.length,practiced:practiced.length,read:items.filter(q=>q.activities.read).length,listen:items.filter(q=>q.activities.listen).length,
+    return {items,total:items.length,practiced:practiced.length,recall:items.filter(q=>q.activities.recall).length,read:items.filter(q=>q.activities.read).length,listen:items.filter(q=>q.activities.listen).length,
       attempts:attempts.reduce((n,a)=>n+a.count,0),passed:attempts.reduce((n,a)=>n+a.passed,0)};
   }
   function studyStreak(today=studyDateKey()){
@@ -93,6 +108,7 @@ export function createStudyStore({ key = STUDY_STORAGE_KEY, storage = () => glob
           const latest=Date.parse(activity.lastAt)>Date.parse(old.lastAt)?activity:old;
           target.items[id].activities[kind]={...latest,count:Math.max(old.count,activity.count)};
           if(['blank','qa','full'].includes(kind))target.items[id].activities[kind].passed=Math.max(old.passed,activity.passed);
+          if(old.eventIds||activity.eventIds)target.items[id].activities[kind].eventIds=[...new Set([...(old.eventIds||[]),...(activity.eventIds||[])])];
         }
       }
     }

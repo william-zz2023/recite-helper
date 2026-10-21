@@ -148,7 +148,15 @@ function renderSidebar(){
       <div class="side-foot"><button class="btn-ghost" id="btnExit">返回首页</button></div>`;
   }
 
-  sb.innerHTML=html;
+  // Keep the music reading directory available without pushing the article far
+  // below the first phone viewport. Desktop keeps the existing full sidebar.
+  if(S.screen==='read'){
+    const details=document.createElement('details');details.className='rr-reading-directory';
+    details.open=window.matchMedia('(min-width: 921px)').matches;
+    const summary=document.createElement('summary');summary.textContent='音乐阅读 · 展开目录与章节';
+    const content=document.createElement('div');content.innerHTML=html;
+    details.append(summary,content);sb.replaceChildren(details);
+  }else sb.innerHTML=html;
 
   // ---------- 事件绑定 ----------
   // 搜索

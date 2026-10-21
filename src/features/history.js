@@ -1,25 +1,24 @@
 import { DATA, S } from '../app/state.js';
-import { studyStore } from '../app/store.js';
+import { studyStore, readingReviewStore } from '../app/store.js';
 import { exitToHome, startScreen, stopActiveAudio } from '../app/navigation.js';
 import { STUDY_KINDS } from '../services/study-history.js';
+import { RECALL_LABELS } from '../services/reading-review.js';
+import { importMusicBackup } from '../services/music-backup.js';
+import { downloadMusicBackup } from '../shared/music-backup.js';
+import { syncReadingReviewHistory } from '../services/reading-review-history.js';
 import { $, el, escHtml, toast } from '../shared/dom.js';
 import { renderSidebar } from './sidebar.js';
 
 const studyView = { selected: studyStore.dateKey(), month: studyStore.dateKey().slice(0, 7) };
 
-function exportStudyHistory() {
-  const url = URL.createObjectURL(new Blob([JSON.stringify(studyStore.exportBackup(), null, 2)], { type: 'application/json' }));
-  const a = document.createElement('a');
-  a.href = url; a.download = '背诵打卡-' + studyStore.dateKey() + '.json';
-  document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
-}
 async function importStudyHistory(file) {
   if (!file) return;
   try {
-    const saved = studyStore.importBackup(JSON.parse(await file.text()));
+    const saved = importMusicBackup(JSON.parse(await file.text()), studyStore, readingReviewStore);
+    syncReadingReviewHistory(readingReviewStore, studyStore, DATA.questions);
+    readingReviewStore.reconcile(DATA.questions);
     if (S.screen === 'history') renderStudyHistory();
-    toast(saved ? '备份已合并' : '记录已合并到当前页面，请导出备份');
+    toast(saved&&!studyStore.error&&!readingReviewStore.error ? '备份已合并' : '记录已合并到当前页面，请导出备份');
   } catch (error) { toast('未导入：' + error.message); }
 }
 
@@ -28,7 +27,7 @@ function studyHomeMarkup(){
   return `<div class="study-head"><div><h2>${summary.total?'今天已打卡':'今日背诵打卡'}</h2><p>${today} · ${summary.total?'已记录今天学过的内容':'完成练习或确认阅读后，自动记录当天学习'}</p></div>
     <button class="study-link" id="entryHistory">查看打卡记录</button></div>
     <div class="study-metrics"><div class="study-metric"><b>${summary.practiced}</b><span>练习题目</span></div><div class="study-metric"><b>${summary.read}</b><span>确认已读</span></div><div class="study-metric"><b>${summary.listen}</b><span>完整听读</span></div><div class="study-metric"><b>${studyStore.streak(today)}</b><span>连续学习天数</span></div></div>
-    <p class="study-note">练习提交后自动记录，同一道题每天去重统计；阅读、听读与背诵练习分开记录。</p>${studyStore.error?`<p class="study-alert" role="status">${escHtml(studyStore.error)}</p>`:''}`;
+    <p class="study-note">今日口头背诵自评 ${summary.recall} 题；自评与练习判分分开记录，题目数按天去重。</p>${studyStore.error?`<p class="study-alert" role="status">${escHtml(studyStore.error)}</p>`:''}`;
 }
 function openStudyHistory(){
   stopActiveAudio();S.screen='history';document.onkeydown=null;
@@ -47,7 +46,7 @@ function renderStudyHistory(){
   intro.innerHTML=`<div class="study-head"><div><h2>背诵打卡记录</h2><p>累计学习 ${Object.keys(studyStore.history.days).length} 天 · 当前连续 ${studyStore.streak(today)} 天</p></div><button class="study-link" id="studyBack">返回首页</button></div>
     <p class="study-note">记录仅保存在当前浏览器，不会在不同设备间自动同步；清理网站数据或使用无痕浏览可能丢失记录。可导出备份后，在另一浏览器导入。</p>
     <div class="study-tools"><button class="study-link" id="studyExport">导出备份</button><button class="study-link" id="studyImport">导入备份</button><input id="studyImportFile" type="file" accept="application/json,.json" hidden></div>
-    <p class="study-note">导入时合并日期与题目；同日同题同模式的次数取较大值，最近成绩取较新记录，重复导入不会累加。</p>${studyStore.error?`<p class="study-alert" role="status">${escHtml(studyStore.error)}</p>`:''}`;
+    <p class="study-note">备份包含读后复习清单、阅读位置与草稿。导入时合并记录，保留当前未完成的一轮；同日同题同模式次数取较大值，重复导入不会累加。</p>${studyStore.error||readingReviewStore.error?`<p class="study-alert" role="status">${escHtml(studyStore.error||readingReviewStore.error)}</p>`:''}`;
   sc.appendChild(intro);
   const calendar=el('section','study-card');
   const [year,month]=studyView.month.split('-').map(Number),first=new Date(year,month-1,1,12),total=new Date(year,month,0,12).getDate();
@@ -65,7 +64,7 @@ function renderStudyHistory(){
   calendar.appendChild(grid);calendar.appendChild(el('p','study-note','绿色表示当天有学习记录；题数按当天学过的题目去重，并不代表全部掌握。'));sc.appendChild(calendar);
   const details=el('section','study-card');
   details.innerHTML=`<div class="study-head"><h2>${studyView.selected} 的学习内容</h2><span class="tag">${summary.total} 题</span></div>
-    <p class="study-note">练习 ${summary.practiced} 题，提交 ${summary.attempts} 次，通过 ${summary.passed} 次；确认阅读 ${summary.read} 题，完整听读 ${summary.listen} 题。</p>`;
+    <p class="study-note">练习 ${summary.practiced} 题，提交 ${summary.attempts} 次，通过 ${summary.passed} 次；口头背诵自评 ${summary.recall} 题，确认阅读 ${summary.read} 题，完整听读 ${summary.listen} 题。</p>`;
   const lastTime=item=>Math.max(...Object.values(item.activities).map(a=>Date.parse(a.lastAt)));
   for(const item of [...summary.items].sort((a,b)=>lastTime(b)-lastTime(a))){
     const row=el('article','study-item');
@@ -78,14 +77,14 @@ function renderStudyHistory(){
     }
     const tags=el('div','study-tags');
     for(const [kind,activity] of Object.entries(item.activities)){
-      const label=STUDY_KINDS[kind]+' · '+activity.count+' 次'+(['blank','qa','full'].includes(kind)?` · 最近 ${activity.lastScore} 分`:'' );
+      const label=STUDY_KINDS[kind]+' · '+activity.count+' 次'+(['blank','qa','full'].includes(kind)?` · 最近 ${activity.lastScore} 分`:kind==='recall'?` · 最近${RECALL_LABELS[activity.lastRating]}${activity.lastAssisted?'（用过提示）':''}`:'' );
       tags.appendChild(el('span','tag soft',escHtml(label)));
     }
     row.appendChild(tags);details.appendChild(row);
   }
   if(!summary.total)details.appendChild(el('p','study-empty',studyView.selected===today?'今天还没有学习记录。<br>提交一道练习，或在阅读页确认“本题已读”，就能开始记录。':'这一天还没有学习记录。'));
   sc.appendChild(details);$('#main').replaceChildren(sc);
-  $('#studyBack').onclick=exitToHome;$('#studyExport').onclick=exportStudyHistory;
+  $('#studyBack').onclick=exitToHome;$('#studyExport').onclick=downloadMusicBackup;
   $('#studyImport').onclick=()=>$('#studyImportFile').click();
   $('#studyImportFile').onchange=e=>importStudyHistory(e.target.files[0]);
   $('#studyPrev').onclick=()=>moveStudyMonth(-1);$('#studyNext').onclick=()=>moveStudyMonth(1);$('#studyToday').onclick=openStudyHistory;

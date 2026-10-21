@@ -1,4 +1,5 @@
 import { DATA, ALL_CHAPS, S } from '../app/state.js';
+import { readingReviewStore } from '../app/store.js';
 import { MATERIAL, MODES, modeName } from '../app/config.js';
 import { startScreen, stopActiveAudio } from '../app/navigation.js';
 import { inScope, modeAvail, buildPracticeList, chunk } from '../services/practice.js';
@@ -10,7 +11,7 @@ import { subjectTabs } from '../shared/subject-tabs.js';
 function renderHome(rerenderSidebar=true){
   if(S.screen==='listen')stopActiveAudio();
   S.screen='home';
-  if(window.location.hash==='#politics')window.history.replaceState(null,'',window.location.pathname+window.location.search);
+  if(['#politics','#music-reading','#music-review'].includes(window.location.hash))window.history.replaceState(null,'',window.location.pathname+window.location.search);
   $('#matInfo').textContent=`${MATERIAL.title} · ${DATA.questions.length} 题 · ${ALL_CHAPS.length} 章`;
   if(rerenderSidebar!==false)renderSidebar();
   const m=$('#main');m.innerHTML='';
@@ -35,6 +36,11 @@ function renderHome(rerenderSidebar=true){
   sc.appendChild(el('div','entry-row',`
     <div class="entry" id="entryRead"><div class="ic">📖</div><div><b>阅读模式</b><span>分块浏览原文，先熟悉内容</span></div></div>
     <div class="entry" id="entryListen"><div class="ic">🎧</div><div><b>听读模式</b><span>朗读原文，边听边看跟读</span></div></div>`));
+  if(readingReviewStore.data.round?.phase==='review'||readingReviewStore.data.pending.length){
+    const active=readingReviewStore.data.round?.phase==='review';
+    const resume=el('button','btn-ghost rr-home-resume',active?'继续上次的读后复习 →':`读后复习 · ${readingReviewStore.data.pending.length} 题待回忆 →`);
+    resume.onclick=()=>startScreen('reading-review');sc.appendChild(resume);
+  }
   sc.appendChild(el('section','study-card',studyHomeMarkup()));
   const n=S.mode?modeAvail(S.mode):0;
   const nb=n?chunk(Array(n).fill(0),10).length:0;
