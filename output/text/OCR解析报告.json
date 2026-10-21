@@ -1,0 +1,5957 @@
+{
+  "engine": "Apple Vision",
+  "fullyProofread": false,
+  "books": [
+    {
+      "id": "upper",
+      "sourceFile": "27肖秀荣-背诵手册【上册】.pdf",
+      "sourceSha256": "82bad2c79c9560d5b4351834d30b9de652d8690fd5e29b24d2617799498ac73b",
+      "pdfPages": 238,
+      "characters": 150444,
+      "pagesToReview": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "lowConfidenceLines": 235,
+      "removedLines": [
+        {
+          "pdfPage": 1,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 2,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 3,
+          "text": "后续更新~~ ¥618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 4,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 5,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 5,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 6,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 6,
+          "text": "III",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 7,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 7,
+          "text": "IV",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 7,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 8,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 9,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 9,
+          "text": "2",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 9,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 10,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 10,
+          "text": "第一部分马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 10,
+          "text": "3",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 11,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 11,
+          "text": "4",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 11,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 12,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 12,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 12,
+          "text": "5",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 13,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 13,
+          "text": "6",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 13,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 14,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 14,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 14,
+          "text": "7",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 15,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 15,
+          "text": "8",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 15,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 16,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 16,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 16,
+          "text": "9",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 17,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 17,
+          "text": "10",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 17,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 18,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 18,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 18,
+          "text": "11",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 19,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 19,
+          "text": "12",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 19,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 20,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 20,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 20,
+          "text": "13",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 21,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 21,
+          "text": "14",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 21,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 22,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 22,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 22,
+          "text": "15",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 23,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 23,
+          "text": "16",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 23,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 24,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 24,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 24,
+          "text": "17",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 25,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 25,
+          "text": "18",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 25,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 26,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 26,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 26,
+          "text": "19",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 27,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 27,
+          "text": "20",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 27,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 28,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 28,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 28,
+          "text": "21",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 29,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 29,
+          "text": "22",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 29,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 30,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 30,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 30,
+          "text": "23",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 31,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 31,
+          "text": "24",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 31,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 32,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 32,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 32,
+          "text": "25",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 33,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 33,
+          "text": "26",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 33,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 34,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 34,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 34,
+          "text": "27",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 35,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 35,
+          "text": "28",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 35,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 36,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 36,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 36,
+          "text": "29",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 37,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 37,
+          "text": "30",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 37,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 38,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 38,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 38,
+          "text": "31",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 39,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 39,
+          "text": "32",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 39,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 40,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 40,
+          "text": "第一部分马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 40,
+          "text": "33",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 41,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 41,
+          "text": "34",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 41,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 42,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 42,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 42,
+          "text": "35",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 43,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 43,
+          "text": "36",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 43,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 44,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 44,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 44,
+          "text": "37",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 45,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 45,
+          "text": "38",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 45,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 46,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 46,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 46,
+          "text": "39",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 47,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 47,
+          "text": "40",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 47,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 48,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 48,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 48,
+          "text": "41",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 49,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 49,
+          "text": "42",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 49,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 50,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 50,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 50,
+          "text": "43",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 51,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 51,
+          "text": "44",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 51,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 52,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 52,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 52,
+          "text": "45",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 53,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 53,
+          "text": "46",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 53,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 54,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 54,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 54,
+          "text": "47",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 55,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 55,
+          "text": "48",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 55,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 56,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 56,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 56,
+          "text": "49",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 57,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 57,
+          "text": "50",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 57,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 58,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 58,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 58,
+          "text": "51",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 59,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 59,
+          "text": "52",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 59,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 60,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 60,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 60,
+          "text": "53",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 61,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 61,
+          "text": "54",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 61,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 62,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 62,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 62,
+          "text": "55",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 63,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 63,
+          "text": "56",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 63,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 64,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 64,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 64,
+          "text": "57",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 65,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 65,
+          "text": "58",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 65,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 66,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 66,
+          "text": "第一部分马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 66,
+          "text": "59",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 67,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 67,
+          "text": "60",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 67,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 68,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 68,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 68,
+          "text": "61",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 69,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 69,
+          "text": "62",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 69,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 70,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 70,
+          "text": "第一部分 马克思主义基本原理",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 70,
+          "text": "63",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 71,
+          "text": "后续更新aq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 71,
+          "text": "64",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 71,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 72,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 73,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 73,
+          "text": "66",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 73,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 74,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 74,
+          "text": "第二部分",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 74,
+          "text": "67",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 75,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 75,
+          "text": "68",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 75,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 76,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 76,
+          "text": "第二部分 毛泽东思想和中国特色社会主义理论体系概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 76,
+          "text": "69",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 77,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 77,
+          "text": "70",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 77,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 78,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 78,
+          "text": "第二部分 毛泽东思想和中国特色社会主义理论体系概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 78,
+          "text": "71",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 79,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 79,
+          "text": "72",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 79,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 80,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 80,
+          "text": "第二部分 毛泽东思想和中国特色社会主义理论体系概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 80,
+          "text": "73",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 81,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 81,
+          "text": "74",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 81,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 82,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 82,
+          "text": "第二部分 毛泽东思想和中国特色社会主义理论体系概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 82,
+          "text": "75",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 83,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 83,
+          "text": "76",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 83,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 84,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 84,
+          "text": "第二部分 毛泽东思想和中国特色社会主义理论体系概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 84,
+          "text": "77",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 85,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 85,
+          "text": "78",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 85,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 86,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 86,
+          "text": "第二部分 毛泽东思想和中国特色社会主义理论体系概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 86,
+          "text": "79",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 87,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 87,
+          "text": "80",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 87,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 88,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 88,
+          "text": "第二部分 毛泽东思想和中国特色社会主义理论体系概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 88,
+          "text": "81",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 89,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 89,
+          "text": "82",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 89,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 90,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 90,
+          "text": "第二部分 毛泽东思想和中国特色社会主义理论体系概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 90,
+          "text": "83",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 91,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 91,
+          "text": "84",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 91,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 92,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 92,
+          "text": "第二部分 毛泽东思想和中国特色社会主义理论体系概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 92,
+          "text": "85",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 93,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 93,
+          "text": "86",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 93,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 94,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 94,
+          "text": "第二部分 毛泽东思想和中国特色社会主义理论体系概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 94,
+          "text": "87",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 95,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 95,
+          "text": "88",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 95,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 96,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 97,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 97,
+          "text": "90",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 97,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 98,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 98,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 98,
+          "text": "91",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 99,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 99,
+          "text": "92",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 99,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 100,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 100,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 100,
+          "text": "93",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 101,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 101,
+          "text": "94",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 101,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 102,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 102,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 102,
+          "text": "95",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 103,
+          "text": "后续更新gq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 103,
+          "text": "96",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 103,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 104,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 104,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 104,
+          "text": "97",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 105,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 105,
+          "text": "98",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 105,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 106,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 106,
+          "text": "99",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 106,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 107,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 107,
+          "text": "100",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 107,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 108,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 108,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 108,
+          "text": "101",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 109,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 109,
+          "text": "102",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 109,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 110,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 110,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 110,
+          "text": "103",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 111,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 111,
+          "text": "104",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 111,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 112,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 112,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 112,
+          "text": "105",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 113,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 113,
+          "text": "106",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 113,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 114,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 114,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 114,
+          "text": "107",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 115,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 115,
+          "text": "108",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 115,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 116,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 116,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 116,
+          "text": "109",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 117,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 117,
+          "text": "110",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 117,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 118,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 118,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 118,
+          "text": "111",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 119,
+          "text": "后续更新gq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 119,
+          "text": "112",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 119,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 120,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 120,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 120,
+          "text": "113",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 121,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 121,
+          "text": "114",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 121,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 122,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 122,
+          "text": "115",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 122,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 123,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 123,
+          "text": "116",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 123,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 124,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 124,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 124,
+          "text": "117",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 125,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 125,
+          "text": "118",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 125,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 126,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 126,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 126,
+          "text": "119",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 127,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 127,
+          "text": "120",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 127,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 128,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 128,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 128,
+          "text": "121",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 129,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 129,
+          "text": "122",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 129,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 130,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 130,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 130,
+          "text": "123",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 131,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 131,
+          "text": "124",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 131,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 132,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 132,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 132,
+          "text": "125",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 133,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 133,
+          "text": "126",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 133,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 134,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 134,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 134,
+          "text": "127",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 135,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 135,
+          "text": "128",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 135,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 136,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 136,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 136,
+          "text": "129",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 137,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 137,
+          "text": "130",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 137,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 138,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 138,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 138,
+          "text": "131",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 139,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 139,
+          "text": "132",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 139,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 140,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 140,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 140,
+          "text": "133",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 141,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 141,
+          "text": "134",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 141,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 142,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 142,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 142,
+          "text": "135",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 143,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 143,
+          "text": "136",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 143,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 144,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 144,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 144,
+          "text": "137",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 145,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 145,
+          "text": "138",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 145,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 146,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 146,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 146,
+          "text": "139",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 147,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 147,
+          "text": "140",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 147,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 148,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 148,
+          "text": "第三部分 习近平新时代中国特色社会主义思想概论",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 148,
+          "text": "141",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 149,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 149,
+          "text": "142",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 149,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 150,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 151,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 151,
+          "text": "144",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 151,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 152,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 152,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 152,
+          "text": "145",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 153,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 153,
+          "text": "146",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 153,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 154,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 154,
+          "text": "147",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 154,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 155,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 155,
+          "text": "148",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 155,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 156,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 156,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 156,
+          "text": "149",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 157,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 157,
+          "text": "150",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 157,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 158,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 158,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 158,
+          "text": "151",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 159,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 159,
+          "text": "152",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 159,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 160,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 160,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 160,
+          "text": "153",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 161,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 161,
+          "text": "154",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 161,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 162,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 162,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 162,
+          "text": "155",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 163,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 163,
+          "text": "156",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 163,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 164,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 164,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 164,
+          "text": "157",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 165,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 165,
+          "text": "158",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 165,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 166,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 166,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 166,
+          "text": "159",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 167,
+          "text": "后续更新qg群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 167,
+          "text": "160",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 167,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 168,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 168,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 168,
+          "text": "161",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 169,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 169,
+          "text": "162",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 169,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 170,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 170,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 170,
+          "text": "163",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 171,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 171,
+          "text": "164",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 171,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 172,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 172,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 172,
+          "text": "165",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 173,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 173,
+          "text": "166",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 173,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 174,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 174,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 174,
+          "text": "167",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 175,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 175,
+          "text": "168",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 175,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 176,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 176,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 176,
+          "text": "169",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 177,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 177,
+          "text": "170",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 177,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 178,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 178,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 178,
+          "text": "171",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 179,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 179,
+          "text": "172",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 179,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 180,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 180,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 180,
+          "text": "173",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 181,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 181,
+          "text": "174",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 181,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 182,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 182,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 182,
+          "text": "175",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 183,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 183,
+          "text": "176",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 183,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 184,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 184,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 184,
+          "text": "177",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 185,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 185,
+          "text": "178",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 185,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 186,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 186,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 186,
+          "text": "179",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 187,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 187,
+          "text": "180",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 187,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 188,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 188,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 188,
+          "text": "181",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 189,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 189,
+          "text": "182",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 189,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 190,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 190,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 190,
+          "text": "183",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 191,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 191,
+          "text": "184",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 191,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 192,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 192,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 192,
+          "text": "185",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 193,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 193,
+          "text": "186",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 193,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 194,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 194,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 194,
+          "text": "187",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 195,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 195,
+          "text": "188",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 195,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 196,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 196,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 196,
+          "text": "189",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 197,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 197,
+          "text": "190",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 197,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 198,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 198,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 198,
+          "text": "191",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 199,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 199,
+          "text": "192",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 199,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 200,
+          "text": "后续更新qq群.618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 200,
+          "text": "第四部分 中国近现代史纲要",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 200,
+          "text": "193",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 201,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 201,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 201,
+          "text": "195",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 202,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 202,
+          "text": "196",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 202,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 203,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 203,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 203,
+          "text": "197",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 204,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 204,
+          "text": "198",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 204,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 205,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 205,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 205,
+          "text": "199",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 206,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 206,
+          "text": "200",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 206,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 207,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 207,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 207,
+          "text": "201",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 208,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 208,
+          "text": "202",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 208,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 209,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 209,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 209,
+          "text": "203",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 210,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 210,
+          "text": "204",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 210,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 211,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 211,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 211,
+          "text": "205",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 212,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 212,
+          "text": "206",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 212,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 213,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 213,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 213,
+          "text": "207",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 214,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 214,
+          "text": "208",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 214,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 215,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 215,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 215,
+          "text": "209",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 216,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 216,
+          "text": "210",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 216,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 217,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 217,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 217,
+          "text": "211",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 218,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 218,
+          "text": "212",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 218,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 219,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 219,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 219,
+          "text": "213",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 220,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 220,
+          "text": "214",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 220,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 221,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 221,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 221,
+          "text": "215",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 222,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 222,
+          "text": "216",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 222,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 223,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 223,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 223,
+          "text": "217",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 224,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 224,
+          "text": "218",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 224,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 225,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 225,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 225,
+          "text": "219",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 226,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 226,
+          "text": "220",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 226,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 227,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 227,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 227,
+          "text": "221",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 228,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 228,
+          "text": "222",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 228,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 229,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 229,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 229,
+          "text": "223",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 230,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 230,
+          "text": "224",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 230,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 231,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 231,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 231,
+          "text": "225",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 232,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 232,
+          "text": "226",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 232,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 233,
+          "text": "后续更新qq群 61 8427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 233,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 233,
+          "text": "227",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 234,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 234,
+          "text": "228",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 234,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 235,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 235,
+          "text": "第五部分 思想道德与法治",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 235,
+          "text": "229",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 236,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 236,
+          "text": "230",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 236,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 237,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 238,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        }
+      ],
+      "sections": [
+        {
+          "number": 1,
+          "title": "马克思主义基本原理",
+          "pdfPage": 8,
+          "isDivider": true,
+          "startPage": 9
+        },
+        {
+          "number": 2,
+          "title": "毛泽东思想和中国特色社会主义理论体系概论",
+          "pdfPage": 72,
+          "isDivider": true,
+          "startPage": 73
+        },
+        {
+          "number": 3,
+          "title": "习近平新时代中国特色社会主义思想概论",
+          "pdfPage": 96,
+          "isDivider": true,
+          "startPage": 97
+        },
+        {
+          "number": 4,
+          "title": "中国近现代史纲要",
+          "pdfPage": 150,
+          "isDivider": true,
+          "startPage": 151
+        },
+        {
+          "number": 5,
+          "title": "思想道德与法治",
+          "pdfPage": 201,
+          "isDivider": false,
+          "startPage": 201
+        }
+      ]
+    },
+    {
+      "id": "lower",
+      "sourceFile": "27肖秀荣-背诵手册【下册】.pdf",
+      "sourceSha256": "4df53b5904e2d7f2452039ae34a423675f6d40746d3112cb1e3f17299c4df821",
+      "pdfPages": 168,
+      "characters": 122740,
+      "pagesToReview": [
+        4,
+        5,
+        6,
+        63,
+        95,
+        161,
+        167
+      ],
+      "lowConfidenceLines": 288,
+      "removedLines": [
+        {
+          "pdfPage": 1,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 2,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 4,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 5,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 5,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 6,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 7,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 8,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 8,
+          "text": "2",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 8,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 9,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 9,
+          "text": "第一部分 特别专题",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 9,
+          "text": "3",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 10,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 10,
+          "text": "4",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 10,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 11,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 11,
+          "text": "第一部分 特别专题",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 11,
+          "text": "5",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 12,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 12,
+          "text": "6",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 12,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 13,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 13,
+          "text": "第一部分 特别专题",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 14,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 14,
+          "text": "8",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 14,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 15,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 15,
+          "text": "第一部分 特别专题",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 15,
+          "text": "9",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 16,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 16,
+          "text": "10",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 16,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 17,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 18,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 18,
+          "text": "12",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 18,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 19,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 19,
+          "text": "第二部分-习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 19,
+          "text": "13",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 20,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 20,
+          "text": "14",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 20,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 21,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 21,
+          "text": "第二部分习题190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 21,
+          "text": "15",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 22,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 22,
+          "text": "16",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 22,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 23,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 23,
+          "text": "第二部分 习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 23,
+          "text": "17",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 24,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 24,
+          "text": "18",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 24,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 25,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 25,
+          "text": "第二部分习题190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 25,
+          "text": "19",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 26,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 26,
+          "text": "20",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 26,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 27,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 27,
+          "text": "第二部分 习题190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 27,
+          "text": "21",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 28,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 28,
+          "text": "22",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 28,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 29,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 29,
+          "text": "第二部分 习题190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 29,
+          "text": "23",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 30,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 30,
+          "text": "24",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 30,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 31,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 31,
+          "text": "第二部分 习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 31,
+          "text": "25",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 32,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 32,
+          "text": "26",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 32,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 33,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 33,
+          "text": "第二部分习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 33,
+          "text": "27",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 34,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 34,
+          "text": "28",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 34,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 35,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 35,
+          "text": "第二部分 习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 35,
+          "text": "29",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 36,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 36,
+          "text": "30",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 36,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 37,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 37,
+          "text": "第二部分 习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 37,
+          "text": "31",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 38,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 38,
+          "text": "32",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 38,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 39,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 39,
+          "text": "第二部分 习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 39,
+          "text": "33",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 40,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 40,
+          "text": "34",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 40,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 41,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 41,
+          "text": "第二部分 习题190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 41,
+          "text": "35",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 42,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 42,
+          "text": "36",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 42,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 43,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 43,
+          "text": "第二部分 习题190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 43,
+          "text": "37",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 44,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 44,
+          "text": "38",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 44,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 45,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 45,
+          "text": "第二部分 习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 45,
+          "text": "39",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 46,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 46,
+          "text": "40",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 46,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 47,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 47,
+          "text": "第二部分 习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 47,
+          "text": "41",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 48,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 48,
+          "text": "42",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 48,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 49,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 49,
+          "text": "第二部分习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 49,
+          "text": "43",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 50,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 50,
+          "text": "44",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 50,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 51,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 51,
+          "text": "第二部分 习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 51,
+          "text": "45",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 52,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 52,
+          "text": "46",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 52,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 53,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 53,
+          "text": "第二部分 习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 53,
+          "text": "47",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 54,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 54,
+          "text": "48",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 54,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 55,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 55,
+          "text": "第二部分 习题190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 55,
+          "text": "49",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 56,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 56,
+          "text": "50",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 56,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 57,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 57,
+          "text": "第二部分 习题190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 57,
+          "text": "51",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 58,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 58,
+          "text": "52",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 58,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 59,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 59,
+          "text": "第二部分 习题190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 59,
+          "text": "53",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 60,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 60,
+          "text": "54",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 60,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 61,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 61,
+          "text": "第二部分 习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 61,
+          "text": "55",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 62,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 62,
+          "text": "56",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 62,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 63,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 63,
+          "text": "第二部分 习题 190",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 63,
+          "text": "57",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 64,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 64,
+          "text": "58",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 64,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 65,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 66,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 66,
+          "text": "60",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 66,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 67,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 67,
+          "text": "第三部分 分析题必背专题",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 67,
+          "text": "61",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 68,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 68,
+          "text": "62",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 68,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 69,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 69,
+          "text": "第三部分 分析题必背专题",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 69,
+          "text": "63",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 70,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 70,
+          "text": "64",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 70,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 71,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 71,
+          "text": "第三部分 分析题必背专题",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 71,
+          "text": "65",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 72,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 72,
+          "text": "66",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 72,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 73,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 73,
+          "text": "第三部分 分析题必背专题",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 73,
+          "text": "67",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 74,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 74,
+          "text": "68",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 74,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 75,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 75,
+          "text": "第三部分 分析题必背专题",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 75,
+          "text": "69",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 76,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 76,
+          "text": "70",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 76,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 77,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 77,
+          "text": "第三部分 分析题必背专题",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 77,
+          "text": "71",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 78,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 78,
+          "text": "72",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 78,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 79,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 79,
+          "text": "第三部分 分析题必背专题",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 79,
+          "text": "73",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 80,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 80,
+          "text": "74",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 80,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 81,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 82,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 82,
+          "text": "76",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 82,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 83,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 83,
+          "text": "第四部分 经典干扰项总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 83,
+          "text": "77",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 84,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 84,
+          "text": "78",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 84,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 85,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 85,
+          "text": "79",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 85,
+          "text": "第四部分 经典干扰项总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 86,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 86,
+          "text": "80",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 86,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 87,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 87,
+          "text": "第四部分 经典干扰项总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 87,
+          "text": "81",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 88,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 88,
+          "text": "82",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 88,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 89,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 89,
+          "text": "第四部分 经典干扰项总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 89,
+          "text": "83",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 90,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 90,
+          "text": "84",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 90,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 91,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 91,
+          "text": "第四部分 经典干扰项总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 91,
+          "text": "85",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 92,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 92,
+          "text": "86",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 92,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 93,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 93,
+          "text": "第四部分 经典干扰项总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 93,
+          "text": "87",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 94,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 94,
+          "text": "88",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 94,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 95,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 96,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 96,
+          "text": "90",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 96,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 97,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 97,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 97,
+          "text": "91",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 98,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 98,
+          "text": "92",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 98,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 99,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 99,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 99,
+          "text": "93",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 100,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 100,
+          "text": "94",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 100,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 101,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 101,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 101,
+          "text": "95",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 102,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 102,
+          "text": "96",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 102,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 103,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 103,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 103,
+          "text": "97",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 104,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 104,
+          "text": "98",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 104,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 105,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 105,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 105,
+          "text": "99",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 106,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 106,
+          "text": "100",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 106,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 107,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 107,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 107,
+          "text": "101",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 108,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 108,
+          "text": "102",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 108,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 109,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 109,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 109,
+          "text": "103",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 110,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 110,
+          "text": "104",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 110,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 111,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 111,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 111,
+          "text": "105",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 112,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 112,
+          "text": "106",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 112,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 113,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 113,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 113,
+          "text": "107",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 114,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 114,
+          "text": "108",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 114,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 115,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 115,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 115,
+          "text": "109",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 116,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 116,
+          "text": "110",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 116,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 117,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 117,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 117,
+          "text": "111",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 118,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 118,
+          "text": "112",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 118,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 119,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 119,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 119,
+          "text": "113",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 120,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 120,
+          "text": "114",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 120,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 121,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 121,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 121,
+          "text": "115",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 122,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 122,
+          "text": "116",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 122,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 123,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 123,
+          "text": "第五部分 234速查",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 123,
+          "text": "117",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 124,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 125,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 125,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 125,
+          "text": "119",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 126,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 126,
+          "text": "120",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 126,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 127,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 127,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 127,
+          "text": "121",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 128,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 128,
+          "text": "122",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 128,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 129,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 129,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 129,
+          "text": "123",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 130,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 130,
+          "text": "124",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 130,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 131,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 131,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 131,
+          "text": "125",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 132,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 132,
+          "text": "126",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 132,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 133,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 133,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 133,
+          "text": "127",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 134,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 134,
+          "text": "128",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 134,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 135,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 135,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 135,
+          "text": "129",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 136,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 136,
+          "text": "130",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 136,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 137,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 137,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 137,
+          "text": "131",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 138,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 138,
+          "text": "132",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 138,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 139,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 139,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 139,
+          "text": "133",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 140,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 140,
+          "text": "134",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 140,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 141,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 141,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 141,
+          "text": "135",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 142,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 142,
+          "text": "136",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 142,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 143,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 143,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 143,
+          "text": "137",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 144,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 144,
+          "text": "138",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 144,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 145,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 145,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 145,
+          "text": "139",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 146,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 146,
+          "text": "140",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 146,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 147,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 147,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 147,
+          "text": "141",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 148,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 148,
+          "text": "142",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 148,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 149,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 149,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 149,
+          "text": "143",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 150,
+          "text": "后续更新qq群618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 150,
+          "text": "144",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 150,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 151,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 151,
+          "text": "第六部分学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 151,
+          "text": "145",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 152,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 152,
+          "text": "146",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 152,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 153,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 153,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 153,
+          "text": "147",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 154,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 154,
+          "text": "148",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 154,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 155,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 155,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 155,
+          "text": "149",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 156,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 156,
+          "text": "150",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 156,
+          "text": "2027考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 157,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 157,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 157,
+          "text": "151",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 158,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 158,
+          "text": "152",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 158,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 159,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 159,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 159,
+          "text": "153",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 160,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 160,
+          "text": "154",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 160,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 161,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 161,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 161,
+          "text": "155",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 162,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 162,
+          "text": "156",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 162,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 163,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 163,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 163,
+          "text": "157",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 164,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 164,
+          "text": "158",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 164,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 165,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 165,
+          "text": "第六部分 学科总结",
+          "reason": "重复分部页眉"
+        },
+        {
+          "pdfPage": 165,
+          "text": "159",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 166,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 166,
+          "text": "160",
+          "reason": "页眉页脚页码"
+        },
+        {
+          "pdfPage": 166,
+          "text": "2027 考研政治背诵手册",
+          "reason": "重复书名页眉"
+        },
+        {
+          "pdfPage": 167,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        },
+        {
+          "pdfPage": 168,
+          "text": "后续更新qq群 618427351",
+          "reason": "重复群号水印"
+        }
+      ],
+      "sections": [
+        {
+          "number": 1,
+          "title": "特别专题",
+          "pdfPage": 7,
+          "isDivider": true,
+          "startPage": 8
+        },
+        {
+          "number": 2,
+          "title": "习题190",
+          "pdfPage": 17,
+          "isDivider": true,
+          "startPage": 18
+        },
+        {
+          "number": 3,
+          "title": "分析题必背专题",
+          "pdfPage": 65,
+          "isDivider": true,
+          "startPage": 66
+        },
+        {
+          "number": 4,
+          "title": "经典干扰项总结",
+          "pdfPage": 81,
+          "isDivider": true,
+          "startPage": 82
+        },
+        {
+          "number": 5,
+          "title": "234速查",
+          "pdfPage": 95,
+          "isDivider": true,
+          "startPage": 96
+        },
+        {
+          "number": 6,
+          "title": "学科总结",
+          "pdfPage": 124,
+          "isDivider": true,
+          "startPage": 125
+        }
+      ]
+    }
+  ]
+}

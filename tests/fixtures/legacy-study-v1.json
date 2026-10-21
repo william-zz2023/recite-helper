@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "days": {
+    "2026-10-20": {
+      "items": {
+        "0": {
+          "id": 0,
+          "title": "音乐美学",
+          "chapter": "音乐美学",
+          "activities": {
+            "qa": {
+              "count": 1,
+              "lastAt": "2026-10-20T09:27:02.648Z",
+              "passed": 1,
+              "lastScore": 88
+            }
+          }
+        }
+      }
+    }
+  }
+}

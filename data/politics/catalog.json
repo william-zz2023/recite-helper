@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "books": [
+    {
+      "id": "upper",
+      "title": "2027 考研政治背诵手册 · 上册",
+      "volume": "上册",
+      "pdfPageCount": 238,
+      "firstContentPage": 9,
+      "dataFile": "upper.json",
+      "readerFile": "upper-reader.json",
+      "textFile": "../../output/text/27肖秀荣-背诵手册【上册】.txt"
+    },
+    {
+      "id": "lower",
+      "title": "2027 考研政治背诵手册 · 下册",
+      "volume": "下册",
+      "pdfPageCount": 168,
+      "firstContentPage": 8,
+      "dataFile": "lower.json",
+      "readerFile": "lower-reader.json",
+      "textFile": "../../output/text/27肖秀荣-背诵手册【下册】.txt"
+    }
+  ]
+}
